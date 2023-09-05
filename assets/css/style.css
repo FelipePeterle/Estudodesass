@@ -1,0 +1,121 @@
+body {
+  font-family: arial;
+  font-size: 14px;
+  background-color: #999;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  background-color: #EEE;
+  height: 100px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  display: block;
+  background-color: #CCC;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+nav li a:hover {
+  background-color: aqua;
+}
+
+.msg-sucesso, .msg-aviso, .msg-info {
+  padding: 10px;
+  font-size: 24px;
+  border: 2px solid #CCC;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.msg-info {
+  border-color: blue;
+  color: blue;
+}
+
+.msg-aviso {
+  border-color: red;
+  color: red;
+}
+
+.msg-sucesso {
+  border-color: green;
+  color: green;
+}
+
+.item_metade, .item_duplo, .item {
+  background-color: black;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.item {
+  width: 250px;
+}
+
+.item_duplo {
+  width: 500px;
+}
+
+.item_metade {
+  width: 125px;
+}
+
+.item-10, .item-9, .item-8, .item-7, .item-6, .item-5, .item-4, .item-3, .item-2, .item-1 {
+  font-size: 14px;
+  border: 1x solid #333;
+  padding: 5px;
+}
+
+.item-1 {
+  font-weight: bold;
+}
+
+.item-2 {
+  font-weight: bold;
+}
+
+.item-3 {
+  font-weight: bold;
+}
+
+.item-4 {
+  font-weight: normal;
+}
+
+.item-5 {
+  font-weight: normal;
+}
+
+.item-6 {
+  font-weight: normal;
+}
+
+.item-7 {
+  font-weight: normal;
+}
+
+.item-8 {
+  font-weight: normal;
+}
+
+.item-9 {
+  font-weight: normal;
+}
+
+.item-10 {
+  font-weight: normal;
+}

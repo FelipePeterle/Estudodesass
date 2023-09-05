@@ -1,0 +1,108 @@
+@import 'reset';
+
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+nav{
+
+    background-color:#EEE;
+    height: 100px;
+
+    ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li{
+        display: inline-block;
+        a{
+            display: block;
+            background-color: #CCC;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                background-color: aqua;
+            }
+        }   
+    }
+
+}
+
+
+%fundamentos-msg{
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid #CCC;
+    margin:auto;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.msg-info{
+    @extend %fundamentos-msg;
+    border-color: blue;
+    color: blue;
+}
+
+.msg-aviso{
+    @extend %fundamentos-msg;
+    border-color: red;
+    color: red;
+}
+
+.msg-sucesso{
+    @extend %fundamentos-msg;
+    border-color: green;
+    color: green;
+}
+
+
+%item{
+    background-color: black;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+$item-width: 250px;
+
+.item{
+    @extend %item;
+    width: $item-width;
+}
+
+.item_duplo{
+    @extend %item;
+    width: $item-width * 2;
+}
+
+.item_metade{
+    @extend %item;
+    width: $item-width/2;
+}
+
+%item-padrão{
+    font-size: 14px;
+    border:1x solid #333;
+    padding: 5px;
+}
+
+@for $i from 1 through 10{
+
+    .item-#{$i}{
+        @extend %item-padrão;
+
+        @if $i <=3{
+            font-weight: bold;
+        }
+        @else{
+            font-weight: normal;
+        }
+    }
+
+}
